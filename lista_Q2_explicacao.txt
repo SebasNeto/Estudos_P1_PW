@@ -1,0 +1,25 @@
+Por que definir as dimensões de uma imagem?
+
+1.Carregando e layout:
+
+* Especificar as dimensões da imagem faz com que o carregando da imagem seja adequado.
+Dessa forma o navgeador reserva o espaço necessário para imagem antes de carrega-lá.
+(carregamento da imagem)
+
+* Especificar as dimensões da imagem também facilita o layout. O navgeador monta o layout
+da página de forma estável do inicio ao fim, evitando que elementos da página se movimentem de forma desorganizada.
+(posição de elementos)
+
+2. Responsividade:
+
+*Definindo as dimensões da imagem o programador tem maio controle sobre o layout da página, podendo
+realizar alterações no projeto conforme for desejado.
+(controle do programador)
+
+3. Compatibilidade com outros navegadores:
+
+*Definir as dimensões da imagem garante que renderização da imagem seja de forma uniforme levando em
+consideração vários dispositivos.
+(execução em diferentes navegadores)
+
+

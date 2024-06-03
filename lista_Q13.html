@@ -1,0 +1,30 @@
+(function() {
+    var a = 5; // 'a' é definida dentro da IIFE
+})(); // A IIFE é imediatamente executada
+
+console.log(a); // Tentativa de acessar 'a' fora do escopo da IIFE
+// Resultado: ReferenceError: a is not defined
+
+O resultado é um ReferenceError porque a variável a é definida dentro de uma 
+função autoexecutável (IIFE) e não está acessível fora dessa função. 
+Este comportamento demonstra o conceito de escopo de variáveis em JavaScript, 
+onde variáveis declaradas dentro de uma função não são acessíveis fora dela.
+
+Correção:
+
+var a; // Declara a variável 'a' no escopo global
+
+(function() {
+    a = 5; // Atribui um valor à variável 'a'
+})();
+
+console.log(a); // Agora 'a' está definida e o resultado será 5
+
+ou
+
+var a = (function() {
+    var a = 5; // 'a' está no escopo da IIFE
+    return a; // Retorna o valor de 'a'
+})();
+
+console.log(a); // Agora 'a' está definida e o resultado será 5

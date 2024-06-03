@@ -1,0 +1,32 @@
+Operador == (Igualdade Abstrata):
+
+Descrição: O operador == compara dois valores para igualdade após 
+converter ambos os valores para um tipo comum. 
+Esse processo é conhecido como "conversão de tipo" ou "coerção de tipo".
+Uso: == verifica se os valores são iguais após a coerção de tipo.
+
+console.log(5 == '5'); // true, porque '5' é convertido para número 5 antes da comparação
+console.log(null == undefined); // true, porque null e undefined são considerados iguais
+console.log(true == 1); // true, porque true é convertido para número 1 antes da comparação
+
+Operador === (Igualdade Estrita):
+
+Descrição: O operador === compara dois valores para igualdade sem realizar 
+a conversão de tipo. Isso significa que tanto o valor quanto o tipo 
+devem ser os mesmos para que a comparação retorne true.
+Uso: === verifica se os valores são estritamente iguais, sem coerção de tipo.
+
+console.log(5 === '5'); // false, porque os tipos são diferentes (número e string)
+console.log(null === undefined); // false, porque os tipos são diferentes (null e undefined)
+console.log(true === 1); // false, porque os tipos são diferentes (booleano e número)
+console.log(5 === 5); // true, porque os valores e os tipos são iguais (ambos são números)
+
+Resumo
+== (Igualdade Abstrata):
+Compara dois valores após realizar a coerção de tipo.
+Pode resultar em true mesmo que os tipos sejam diferentes, 
+desde que os valores sejam considerados iguais após a conversão.
+
+=== (Igualdade Estrita):
+Compara dois valores sem realizar a coerção de tipo.
+Retorna true somente se ambos os valores e tipos forem exatamente iguais.

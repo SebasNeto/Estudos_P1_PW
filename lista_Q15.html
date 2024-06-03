@@ -1,0 +1,30 @@
+var fullname = 'John Doe'; // Variável global, que se torna window.fullname em navegadores
+var obj = {
+    fullname: 'Colin Ihrig',
+    prop: {
+        fullname: 'Aurelio De Rosa',
+        getFullname: function() {
+            return this.fullname;
+        }
+    }
+};
+
+console.log(obj.prop.getFullname()); // 'Aurelio De Rosa'
+// 'this' refere-se a 'obj.prop'
+
+var test = obj.prop.getFullname;
+console.log(test()); // 'John Doe'
+// 'this' refere-se ao objeto global (window), onde 'window.fullname' é 'John Doe'
+
+saida:
+Aurelio De Rosa
+John Doe
+
+
+Conclusão
+O resultado da execução do código é 'Aurelio De Rosa' seguido de 'John Doe' 
+devido à diferença de contexto da palavra-chave this:
+
+No primeiro caso, this refere-se ao objeto obj.prop, retornando 'Aurelio De Rosa'.
+No segundo caso, this refere-se ao objeto global, retornando 'John Doe' 
+porque a variável global fullname foi definida com esse valor.

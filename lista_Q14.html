@@ -1,0 +1,30 @@
+function teste() {
+    var a; // A declaração da variável é "hoisted" para o topo
+    function foo() { // A declaração da função é "hoisted" para o topo
+        return 2;
+    }
+
+    console.log(a); // undefined, pois a variável é declarada mas não inicializada
+    console.log(foo()); // 2, pois a função foo é "hoisted" e pode ser chamada
+
+    a = 1; // Inicialização da variável
+}
+teste();
+
+
+saida:
+undefined
+2
+
+Conclusão
+O resultado da execução do código é undefined seguido de 2 devido ao 
+comportamento de hoisting:
+
+console.log(a);: Resulta em undefined porque a variável a foi declarada 
+mas ainda não inicializada no momento em que o console.log é executado.
+
+console.log(foo());: Resulta em 2 porque a função foo é "hoisted" e está 
+disponível no topo da função teste, permitindo sua chamada antes da sua 
+definição no código.
+Este comportamento ilustra claramente como o hoisting afeta a 
+execução do código em JavaScript.

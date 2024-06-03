@@ -1,0 +1,55 @@
+Usar um arquivo JavaScript externo em vez de código JavaScript embarcado 
+dentro de uma página HTML tem várias vantagens. 
+Aqui estão duas vantagens principais:
+
+1. Separação de Conteúdo e Comportamento
+Vantagem: A separação do conteúdo HTML e do comportamento JavaScript permite 
+um código mais limpo e organizado, facilitando a manutenção e o 
+desenvolvimento do projeto.
+
+2. Performance e Cache
+Vantagem: Usar arquivos JavaScript externos melhora a performance de 
+carregamento da página e permite o aproveitamento de 
+cache pelos navegadores.
+
+JavaScript Embarcado (Interno)
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de JavaScript Embarcado</title>
+    <script>
+        function showMessage() {
+            alert("Olá, mundo!");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showMessage()">Clique aqui</button>
+</body>
+</html>
+
+JavaScript Externo
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de JavaScript Externo</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <button onclick="showMessage()">Clique aqui</button>
+</body>
+</html>
+
+Arquivo script.js:
+function showMessage() {
+    alert("Olá, mundo!");
+}
+
+Conclusão
+Usar arquivos JavaScript externos promove uma melhor organização do 
+código e oferece vantagens de performance significativas devido 
+ao cache do navegador. Essas práticas são recomendadas especialmente 
+em projetos maiores e colaborativos, onde a manutenção e a eficiência 
+são cruciais.

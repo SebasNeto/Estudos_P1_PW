@@ -1,0 +1,25 @@
+
+A tag <meta charset='UTF-8'> define a codificação de caracteres usada na página, 
+o que é essencial para a correta exibição de caracteres especiais. 
+
+A especificação HTML5 requer que esta tag esteja dentro do elemento <head> para ser corretamente reconhecida pelo navegador.
+
+Provas anteriores:
+
+Comentários: Todos os erros foram relatados corretamente
+
+Linha 4: comentários devem ser colocados entre '<!-- -->' e não entre '/* */';
+Linha 8 e 9: a estilização de um elemento segue um padrão de 'chave:valor' e não 'chave = valor';
+Linha 17: a tag <strong> nunca foi fechada;
+Linha 25: para auto referência deve se usar o termo 'this' e não 'that'.
+
+
+1 -> Faltam as tags <html> e </html>, que devem ser colocadas respectivamente
+	depois do <!DOCTYPE html> e após a tag </body>;
+2 -> O comentário em HTML5 não começa e termina com /* */, para fazer um
+	comentário corretamente deve utilizar <!-- -->;
+3 -> Em vez de <h1></h1> usar <title></title>;
+4 -> Não foi definido as dimensões de width e heigh, por exemplo 260px ou 111px.
+
+Nota: 1.5
+O erro 4 não existe. Os demais erros foram reportados corretamente.

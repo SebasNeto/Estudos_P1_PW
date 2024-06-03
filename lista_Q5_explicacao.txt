@@ -1,0 +1,21 @@
+Unidade absolutas:
+são fixas e não mudam em relção a outros elementos.
+Independentes da configuração dos usuários.
+
+Ex.:
+
+px (pixels)
+pt (pontos)
+cm (centímetros)
+
+Unidades Relativas:
+dimencionadas em relação a outro valor. São flexiveis e se ajusatam 
+de acordo com o ambiente utilizado.
+
+Ex.:
+
+em - > relativa ao tamaho do elemento pai. Define tamanho de textos, margens
+e preenchimentos.
+
+As mudanças são sincronizadas em relação ao elemento pai, se algo mudar nele
+muda nos outros elementos que o referenciam.

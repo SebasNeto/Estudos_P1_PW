@@ -1,0 +1,26 @@
+Tipagem dinâmica é uma característica de algumas linguagens de programação, 
+incluindo JavaScript, onde o tipo de uma variável é determinado no momento 
+da execução e pode mudar ao longo do tempo. 
+Isso significa que uma variável pode ser inicializada com um tipo de dado 
+(por exemplo, um número) e posteriormente ser atribuída a um valor de outro 
+tipo (por exemplo, uma string) sem necessidade de declarar o tipo explicitamente.
+
+// Declaração de uma variável com um número
+let minhaVariavel = 42;
+console.log(minhaVariavel); // Output: 42
+console.log(typeof minhaVariavel); // Output: number
+
+// Reatribuição da variável com uma string
+minhaVariavel = "Agora sou uma string";
+console.log(minhaVariavel); // Output: Agora sou uma string
+console.log(typeof minhaVariavel); // Output: string
+
+// Reatribuição da variável com um booleano
+minhaVariavel = true;
+console.log(minhaVariavel); // Output: true
+console.log(typeof minhaVariavel); // Output: boolean
+
+// Reatribuição da variável com um objeto
+minhaVariavel = { nome: "João", idade: 30 };
+console.log(minhaVariavel); // Output: { nome: 'João', idade: 30 }
+console.log(typeof minhaVariavel); // Output: object

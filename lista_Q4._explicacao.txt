@@ -1,0 +1,15 @@
+Estilos:
+
+Inlines - 
+aplicados em determinado elemento da página, levando em consideração
+a linha. Ou seja, afeta só a linha referenciada do elemento.
+
+Embarcados (internos) -
+definido dentro do html, em head utilizando style.
+Afeta todos os elementos da página.
+
+Externos - 
+estilo definido em um arquivo .css separado do html e referenciado no mesmo.
+Permite a reutilização em determinadas partes do código.
+
+

@@ -1,0 +1,11 @@
+7) De que forma as 4 declarações CSS abaixo podem ser representadas 
+através de um único comando CSS?
+
+padding-top: 5px;
+padding-bottom: 15px;
+padding-right: 0px;
+padding-left: 10px;
+
+
+solucção:
+padding: 5px 0px 15px 10px;

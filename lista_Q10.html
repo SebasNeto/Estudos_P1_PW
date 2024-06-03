@@ -1,0 +1,43 @@
+O código fornecido cria uma interface simples com dois 
+botões que permitem adicionar e remover estilos a um 
+elemento <div> com o ID icomp.
+
+Resumo do Funcionamento
+Quando o botão "Adicionar Estilos" é clicado:
+    
+O <div> com o ID icomp recebe um fundo cinza claro (lightgray), 
+texto vermelho (red) e tamanho de fonte de 32 pixels (32px).
+
+Quando o botão "Limpar Estilo" é clicado:
+Os estilos aplicados ao <div> icomp são removidos, 
+retornando ao estilo padrão do navegador ou aos estilos definidos 
+em outra parte do CSS.
+
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+</head>
+<body>
+
+<div id="icomp">Instituto de Computação</div>
+<button id="add">Adicionar Estilos</button>
+<button id="clean">Limpar Estilo</button>
+
+<script>
+    var icomp = document.getElementById("icomp");
+    document.getElementById("add").onclick = function() {
+        icomp.style.setProperty("background-color", "lightgray");
+        icomp.style.setProperty("color", "red");
+        icomp.style.setProperty("font-size", "32px");
+    }
+    document.getElementById("clean").onclick = function() {
+        icomp.style.removeProperty("background-color");
+        icomp.style.removeProperty("color");
+        icomp.style.removeProperty("font-size");
+    }
+</script>
+
+</body>
+</html>
